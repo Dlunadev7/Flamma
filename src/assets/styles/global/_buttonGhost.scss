@@ -1,0 +1,20 @@
+.buttonGhost, .buttonGhostTwo {
+	width: 20rem;
+	height: 5rem;
+	border: 1px solid var(--btn-primary-border);
+	color: var(--btn-primary-color);
+	background-color: #00000000;
+	font-weight: bold;
+	transition: all .3s;
+	font-size: 20px;
+	&:hover {
+		background-color: var(--btn-primary-color);
+		color: var(--white);
+	}
+  
+}
+
+
+.buttonGhostTwo {
+	width: 34.5rem !important;
+}

@@ -1,0 +1,207 @@
+
+:root{
+  --primary-color: #B18442;
+  --secondary-color: #151A2F;
+  --btn-primary-color: #D39D2A;
+  --btn-secondary-color: #AC842D; 
+  --btn-primary-border: #D39D2A;
+  --link-footer: #1CAFF0;
+  --white: #ffffff;
+  --links-color: #FFFAF5;
+
+/* font-sizes */
+
+  --navbar-links-size: 14px;
+  --main-title-size: 40px;
+  --main-title-our-devs: 50px;
+  --main-text-size: 16px;
+  --btn-text-size: 20px;
+  --main-card-text-size: 23px;
+
+
+  --font-size-18: 1.2rem;
+  --font-size-20: 1.25rem;
+  --font-size-21: 1.3rem;
+  --font-size-23: 1.4rem;
+  --font-size-24: 1.5rem;
+  --font-size-25: 1.56rem;
+  --font-size-30: 1.87rem;
+  --font-size-38: 2.4rem;
+  --font-size-40: 2.5rem;
+  --font-size-50: 3rem;
+  --font-size-60: 6vmin;
+  --font-size-75: 2.5vw;
+}
+
+body {
+  color: var(--white) !important;
+}
+
+.link-footer {
+  color: var(--link-footer);
+}
+
+.text-primary-orange {
+  color: var(--primary-color) !important;
+}
+
+
+.fs-14 {
+  font-size: var(--navbar-links-size) !important;
+}
+
+.fs-40 {
+  font-size: 2.2rem;
+}
+
+.fs-50 {
+  font-size: 2.6rem;
+}
+
+.fs-16 {
+  font-size: 1rem;
+}
+
+.fs-18 {
+  font-size: var(--font-size-18);
+}
+
+.fs-20 {
+  font-size: var(--font-size-20);
+}
+
+.fs-21 {
+  font-size: var(--font-size-21);
+}
+
+.fs-23 {
+  font-size: var(--font-size-23);
+}
+
+.fs-24 {
+  font-size: var(--font-size-24);
+}
+
+.fs-25 {
+  font-size: var(--font-size-25);
+}
+
+.fs-30 {
+  font-size: var(--font-size-30);
+}
+
+.fs-38 {
+  font-size: var(--font-size-38);
+}
+
+.fs-40 {
+  font-size: var(--font-size-40);
+}
+
+.fs-50 {
+  font-size: var(--font-size-50);
+}
+
+.fs-60 {
+  font-size: var(--font-size-60);
+}
+
+.fs-75 {
+  font-size: var(--font-size-75);
+}
+
+.sspro {
+  font-family: "sourceSansPro";
+}
+
+.sspro-light {
+  font-family: "sourceSansPro-light";
+}
+
+.sspro-regular {
+  font-family: "sourceSansPro-regular";
+}
+
+.montserrat-light {
+  font-family: "montserrat light";
+}
+
+.montserrat-regular {
+  font-family: "montserrat regular";
+}
+
+.montserrat-semibold {
+  font-family: "montserrat semibold";
+}
+
+.montserrat-medium {
+  font-family: "montserrat medium";
+}
+
+.montserrat-bold {
+  font-family: "montserrat bold";
+}
+
+.montserrat-extrabold {
+  font-family: "montserrat extrabold";
+}
+
+.montserrat-black {
+  font-family: "montserrat black";
+}
+
+.raleway-extrabold {
+  font-family: "raleway-extrabold";
+}
+
+@font-face {
+  font-family: "montserrat light";
+  src: url("../../fonts/Montserrat-Light.ttf");
+}
+
+@font-face {
+  font-family: "montserrat regular";
+  src: url("../../fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: "montserrat semibold";
+  src: url("../../fonts/Montserrat-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "montserrat bold";
+  src: url("../../fonts/Montserrat-Bold.ttf");
+}
+
+@font-face {
+  font-family: "montserrat extrabold";
+  src: url("../../fonts/Montserrat-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "montserrat black";
+  src: url("../../fonts/Montserrat-Black.ttf");
+}
+
+@font-face {
+  font-family: "montserrat medium";
+  src: url("../../fonts/Montserrat-Medium.ttf");
+}
+
+@font-face {
+  font-family: "sourceSansPro";
+  src: url("../../fonts/SourceSansPro-Regular.otf");
+}
+
+@font-face {
+  font-family: "sourceSansPro-light";
+  src: url("../../fonts/SourceSansPro-Light.otf");
+}
+
+@font-face {
+  font-family: "sourceSansPro-regular";
+  src: url("../../fonts/SourceSansPro-Regular.otf");
+}
+
+

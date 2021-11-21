@@ -1,0 +1,154 @@
+.Resultados {
+    padding-bottom: 20vh;
+    min-height: 130vh;
+    #resizing_select {
+        width: 8rem;
+    }
+    #width_tmp_select {
+        display: none;
+    }
+    .main {
+        padding: 0 3% 0 3%;
+        padding-top: 15rem;
+        // padding-top: 25rem;
+        padding-bottom: 7rem;
+        h5 {
+            font-size: 1.35rem;
+            color: var(--secondary-color);
+            font-weight: 300;
+        }
+        h2 {
+            font-weight: 300;
+            font-size: 4rem;
+            color: var(--secondary-color);
+            span {
+                color: var(--primary-color);
+                font-size: 4rem;
+            }
+        }
+        .btn-square {
+            width: 6rem;
+            height: 4.5rem;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            border: 1px solid var(--primary-color);
+            background: transparent;
+            color: var(--primary-color);
+            &.active {
+                border: transparent;
+                background: #F97F2D;
+                i {
+                    color: #fff;
+                }
+            }
+        }
+        span {
+            font-size: 1rem;
+            color: var(--primary-color);
+            width: 100%;
+            line-height: 1;
+            font-weight: 200;
+            // text-transform: uppercase;
+            margin-bottom: 1rem;
+            button {
+                border: none;
+                background-color: transparent;
+                font-weight: 200;
+                i {
+                    color: var(--primary-color);
+                }
+            }
+            select {
+                border: none;
+                line-height: 1;
+                height: 1rem;
+                font-size: 1rem;
+                background-color: transparent;
+                font-weight: 200;
+                color: var(--secondary-color);
+            }
+        }
+        .not-results-message {
+            color: var(--secondary-color);
+            font-weight: 500;
+            display: block;
+            text-transform: none;
+            margin-top: 2rem;
+            font-size: 1.5rem;
+        }
+    }
+    &.dark {
+        background-color: var(--secondary-color);
+        .breadcrumb,
+        .breadcrumb-item {
+            color: #fff;
+            &::before {
+                color: #fff;
+            }
+        }
+        .main {
+            h2,
+            h5 {
+                color: #fff;
+            }
+            .btn-square {
+                background-color: transparent !important;
+                border: 1px solid var(--primary-color) !important;
+                i {
+                    color: var(--primary-color);
+                }
+            }
+            .not-results-message {
+                color: #fff;
+            }
+        }
+    }
+    .results {
+        padding: 0 3% 0 3%;
+    }
+}
+
+@media (max-width:992px) {
+    .Resultados {
+        .main {
+            padding: 10rem 0rem 2rem 0rem;
+            button {
+                background-color: var(--primary-color);
+                color: #fff;
+                border: none;
+                padding: 1rem;
+                position: fixed;
+                top: 4rem;
+                left: 0;
+                right: 0;
+                z-index: 9;
+                width: 100%;
+                transform: .4s ease all;
+                &.filters-top {
+                    position: fixed;
+                    top: 0;
+                }
+            }
+            h5 {
+                font-size: .8rem;
+            }
+            h2 {
+                font-size: 1.8rem;
+                line-height: 1.3;
+                display: inline-block;
+                margin-bottom: 0;
+                span {
+                    display: inline-block;
+                    margin-bottom: 0;
+                    font-size: 1.8rem;
+                }
+            }
+            span {
+                font-size: .7rem;
+            }
+        }
+    }
+}

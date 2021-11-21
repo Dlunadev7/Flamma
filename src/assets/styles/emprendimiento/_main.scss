@@ -1,0 +1,118 @@
+.Emprendimiento {
+    .main {
+        min-height: 100vh;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        &::before {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            content: '';
+            // background-color: #0f0f0f;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.751278) 10%, rgba(115, 115, 115, 0) 50%, rgba(0, 0, 0, 0.351278) 100%);
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            opacity: 1;
+            z-index: 9;
+            display: block;
+        }
+        .content-main {
+            position: relative;
+            height: 100vh;
+            z-index: 9;
+            .btn-square {
+                padding: 0;
+                width: 6.5rem;
+                color: #fff;
+                border-radius: 50%;
+                border: 1px solid #fff;
+                background: transparent;
+                height: 6.5rem;
+                font-size: 1.5rem;
+                margin-right: 5rem;
+                transition: .3s ease all;
+                color: transparent;
+                .count {
+                    position: absolute;
+                    left: 45%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    color: var(--secondary-color);
+                    font-size: 1.2rem;
+                    z-index: 0;
+                    font-weight: 400;
+                    opacity: 0;
+                }
+                i {
+                    color: #fff;
+                    transition: .3s ease all;
+                }
+                &:hover {
+                    border-color: transparent;
+                    .count {
+                        opacity: 1;
+                    }
+                    i {
+                        font-size: .95rem;
+                        transform: translateX(30px);
+                        color: var(--secondary-color);
+                    }
+                }
+            }
+            h2 {
+                font-size: 5rem;
+                color: #fff;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+@media (max-width:992px) {
+    .Emprendimiento {
+        .main {
+            height: 90vh;
+            background-attachment: unset;
+            position: relative;
+            min-height: 90vh;
+            &::before {
+                opacity: .6;
+            }
+            &::after {
+                opacity: .3;
+            }
+            .content-main {
+                height: 90vh;
+                h2 {
+                    font-size: 2.6rem;
+                    display: block;
+                    margin-bottom: 0 !important;
+                    .location {
+                        font-size: 1rem;
+                    }
+                }
+                .btn-square {
+                    width: 4rem;
+                    height: 4rem;
+                    position: absolute !important;
+                    left: 1rem;
+                    bottom: 5vh;
+                    font-size: 1rem;
+                }
+            }
+            .btn {
+                width: 4rem;
+                height: 4rem;
+                position: absolute !important;
+                left: calc(0%);
+                bottom: 5vh;
+                font-size: 1rem;
+            }
+        }
+    }
+}
