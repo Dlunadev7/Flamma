@@ -3,11 +3,12 @@ import React from 'react'
 import { Link} from "react-router-dom";
 import { useEffect, useState } from "react";
 import { useSelector,useDispatch } from "react-redux";
-import { changeLocationAction } from "../redux/themeDucks";
-import { updateFields,formTokko } from '../redux/contactDucks'
+import { changeLocationAction } from "../../redux/themeDucks";
+import { updateFields,formTokko } from '../../redux/contactDucks'
 import ReCAPTCHA from "react-google-recaptcha";
 import { useLocation, useHistory } from "react-router-dom";
-import { getWhatsapp } from "../functions/functions_contact";
+import { getWhatsapp } from "../../functions/functions_contact";
+import $ from 'jquery';
 
 export const Footer = () => {
 
