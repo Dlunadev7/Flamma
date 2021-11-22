@@ -1,0 +1,61 @@
+.Emprendimiento {
+    .lotes {
+        padding: 10vh 0;
+        h2 {
+            font-size: 5rem;
+            font-weight: 300;
+        }
+        .row {
+            max-width: 90%;
+            margin: auto;
+            h5 {
+                font-weight: 600;
+                font-size: 1rem;
+            }
+            p {
+                font-weight: 400;
+                font-size: 1.2rem;
+            }
+            .btn {
+                width: 2.5rem;
+                height: 2.5rem;
+                border-radius: 100%;
+                border: 2px solid var(--primary-color);
+                &:hover {
+                    background: #fff !important;
+                    color: var(--primary-color) !important;
+                    border: 2px solid var(--primary-color);
+                }
+            }
+        }
+        .underlined {
+            border-bottom: 1px solid #070707;
+        }
+    }
+}
+
+@media (max-width:992px) {
+    .Emprendimiento {
+        .lotes {
+            padding: 0vh 0;
+            h2 {
+                font-size: 2.2rem;
+                margin-bottom: 2.2rem;
+            }
+            .row {
+                max-width: 100%;
+                h5 {
+                    font-size: .9rem;
+                }
+                p {
+                    font-size: 1rem;
+                }
+                .btn {
+                    width: 2rem;
+                    height: 2rem;
+                    font-size: .9rem;
+                }
+            }
+        }
+    }
+}

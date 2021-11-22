@@ -1,0 +1,449 @@
+    .nosotros {
+        .main {
+            overflow: hidden;
+            min-height: 100vh;
+            min-width: 100%;
+            position: relative;
+            background-color: transparent;
+            &::before {
+                content: '';
+                height: 100vh;
+                z-index: 1;
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                top: 0;
+                width: 30%;
+            }
+            &::after {
+                content: '';
+                background: linear-gradient(36deg, #cc912a 45%, transparent 7%);
+                z-index: 2;
+                position: absolute;
+                left: 28%;
+                bottom: 0;
+                width: 200px;
+                height: 180px;
+            }
+            .logo-absolute {
+                position: absolute;
+                left: calc(25% - 5rem);
+                top: 40%;
+                z-index: 99;
+                width: 10rem !important;
+                height: 10rem !important;
+                -webkit-animation: rotating 10s linear infinite;
+                -moz-animation: rotating 10s linear infinite;
+                -ms-animation: rotating 10s linear infinite;
+                -o-animation: rotating 10s linear infinite;
+                animation: rotating 10s linear infinite;
+            }
+            .index-1 {
+                left: 30%;
+                background-color: transparent;
+                z-index: 2 !important;
+                position: absolute !important;
+                .line-vertical {
+                    border-color: #0F0F0F;
+                    opacity: .2;
+                }
+            }
+            .row {
+                height: calc(100vh);
+                position: relative;
+                background-color: transparent;
+                z-index: 9;
+                .w-30 {
+                    width: 50vw;
+                }
+                .h-100 {
+                    height: 100vh;
+                    h2 {
+                        font-size: 5rem;
+                        color: #0F0F0F;
+                        font-weight: 300;
+                        margin-top: 15vh;
+                        margin-bottom: 35vh;
+                    }
+                    h5 {
+                        font-size: 1rem;
+                        font-weight: 400;
+                        color: #ffff;
+                        line-height: 1.6;
+                        // letter-spacing: px;
+                        br {
+                            margin-bottom: .5rem;
+                            display: block;
+                        }
+                        span {
+                            width: 10rem;
+                            background-color: #fff;
+                            height: 1px;
+                            vertical-align: middle;
+                        }
+                    }
+                    // img.logo-total {
+                    //     width: 100%;
+                    // }
+                    .content-main {
+                        padding: 5.25rem 5rem;
+                        padding-top: 9rem;
+                        .absolute-top,
+                        .absolute-bottom {
+                            width: 0;
+                        }
+                        .breadcrumb-div {
+                            width: 50vw;
+                        }
+                        span {
+                            font-size: 1rem;
+                            font-weight: 400;
+                            color: var(--primary-color);
+                        }
+                        p {
+                            font-size: 1.5rem;
+                            font-weight: 300;
+                            line-height: 1.2;
+                        }
+                        .line-horizontal {
+                            width: 100%;
+                            margin-top: 5rem;
+                            height: .7rem;
+                            display: block;
+                        }
+                        .step {
+                            transition: opacity .4s ease-out;
+                            opacity: 0;
+                            height: 0;
+                            overflow: hidden;
+                            width: fit-content;
+                            justify-content: center;
+                            align-items: center;
+                            display: flex;
+                            flex-direction: column;
+                            .absolute-top {
+                                transition: 0s all ease;
+                                right: -100rem;
+                                width: 9vw;
+                            }
+                            .absolute-bottom {
+                                transition: 0s all ease;
+                                left: -100rem;
+                            }
+                            &.active {
+                                opacity: 1;
+                                // display: block !important;
+                                overflow: visible;
+                                height: auto;
+                                position: relative;
+                                .absolute-top {
+                                    transition: 0s all ease;
+                                    right: -10rem;
+                                    top: -5rem;
+                                    width: 10rem;
+                                }
+                                .absolute-bottom {
+                                    transition: 0s all ease;
+                                    z-index: -33;
+                                    width: 12rem;
+                                    left: -8rem;
+                                    bottom: -5rem;
+                                }
+                            }
+                        }
+                        .card-about {
+                            h3 {
+                                font-family: 'LEMON MILK';
+                                font-weight: 400;
+                                font-size: 2rem;
+                                min-width: 30vw;
+                            }
+                            span {
+                                color: var(--secondary-color);
+                                font-size: 1rem;
+                                margin-right: 3rem;
+                            }
+                            .content-img {
+                                position: relative;
+                                .absolute-mat {
+                                    position: absolute;
+                                    left: 31vh;
+                                    top: 10%;
+                                    width: 7rem;
+                                    z-index: 999;
+                                }
+                                .content-hover {
+                                    position: relative;
+                                    width: fit-content;
+                                    overflow: hidden;
+                                    height: 100%;
+                                    margin: 3rem 0 1.5rem 0;
+                                    &::before {
+                                        content: '';
+                                        position: absolute;
+                                        left: 0;
+                                        right: 0;
+                                        top: 0;
+                                        bottom: 0;
+                                        z-index: 99;
+                                        background: linear-gradient( 135deg, transparent 90%, #fff 6%);
+                                    }
+                                    &:hover {
+                                        img {
+                                            transform: scale(1.1);
+                                        }
+                                    }
+                                    img {
+                                        width: 35vh;
+                                        transition: .9s ease all;
+                                        object-fit: cover;
+                                        object-position: center;
+                                        display: block;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .buttons {
+                    position: absolute;
+                    top: 85vh;
+                    left: 50%;
+                    z-index: 99;
+                    button {
+                        border: none;
+                        font-weight: 200;
+                        background-color: transparent;
+                        font-size: 1rem;
+                        margin: 0 3rem;
+                        margin-top: 6vh;
+                        &.bold {
+                            font-size: 1.5rem;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    @media(min-width:992px) {
+        .nosotros {
+            .main {
+                .full-fluid {
+                    max-width: 95%;
+                    margin-left: auto;
+                    padding-right: 0;
+                    margin-right: 0;
+                    position: relative;
+                }
+            }
+        }
+    }
+    
+    @media (max-width:992px) {
+        .nosotros {
+            .main {
+                min-height: unset;
+                &::before {
+                    opacity: .9;
+                    width: 100%;
+                    transform: rotate(180deg);
+                }
+                &::after {
+                    display: none;
+                }
+                .index-1 {
+                    display: none;
+                }
+                .row {
+                    height: unset;
+                    position: relative;
+                    img.main-photo {
+                        position: absolute;
+                        top: -30vh;
+                        object-fit: cover;
+                        object-position: center;
+                        width: 90%;
+                        margin: 0 auto;
+                        z-index: 99;
+                        height: 40vh;
+                    }
+                    .w-30 {
+                        width: 100%;
+                    }
+                    .h-100 {
+                        height: 100vh !important;
+                        padding-bottom: 20vh;
+                        h2 {
+                            font-size: 2.5rem;
+                            margin-bottom: 5vh;
+                            margin-top: 0;
+                        }
+                        h5 {
+                            font-size: 1rem;
+                            font-weight: 200;
+                            color: #ffff;
+                            line-height: 1.6;
+                            // letter-spacing: px;
+                            br {
+                                margin-bottom: .5rem;
+                                display: block;
+                            }
+                            span {
+                                width: 10rem;
+                                background-color: #fff;
+                                height: 1px;
+                                vertical-align: middle;
+                            }
+                        }
+                        img {
+                            width: 93%;
+                            margin: auto;
+                            height: 40vh;
+                            position: absolute;
+                            top: 80vh;
+                            object-fit: cover;
+                            object-position: center;
+                            z-index: 10;
+                        }
+                        .logo-absolute {
+                            display: none;
+                        }
+                        .content-main {
+                            padding: 10vh 0rem;
+                            background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(235, 235, 235, 1) 100%);
+                            &.step {
+                                .active {
+                                    .absolute-bottom {
+                                        left: 0;
+                                        right: 0;
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                            &.h-100 {
+                                height: unset;
+                            }
+                            span {
+                                margin-bottom: 1rem;
+                                display: block;
+                                font-size: 1.3rem;
+                            }
+                            p {
+                                font-size: 1.5rem;
+                                font-weight: 300;
+                                line-height: 1.2;
+                            }
+                            .line-horizontal {
+                                width: 100%;
+                                margin-top: 5rem;
+                                height: .7rem;
+                                display: block;
+                            }
+                            .card-about {
+                                h3 {
+                                    font-family: 'LEMON MILK';
+                                    font-weight: 400;
+                                    font-size: 2rem;
+                                    min-width: 30vw;
+                                }
+                                span {
+                                    color: var(--secondary-color);
+                                    font-size: 1rem;
+                                    margin-right: 3rem;
+                                }
+                                .content-img {
+                                    position: relative;
+                                    width: fit-content;
+                                    margin: auto;
+                                    .absolute-mat {
+                                        position: absolute;
+                                        left: 0;
+                                        top: 10%;
+                                        width: 7rem;
+                                    }
+                                    img {
+                                        width: 50vw;
+                                        margin: 3rem 0;
+                                        display: block;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .buttons {
+                        position: relative;
+                    }
+                    .h-sm-auto {
+                        height: unset !important;
+                    }
+                    .about_info {
+                        h5 {
+                            font-size: .9rem;
+                            font-weight: 400;
+                            font-family: 'LEMON MILK';
+                            color: var(--secondary-color);
+                            margin-bottom: 1.5rem;
+                            margin-top: 25vh;
+                        }
+                        p {
+                            font-size: 1rem;
+                            font-weight: 200;
+                        }
+                        .line-horizontal {
+                            margin-top: 5rem;
+                            height: .7rem;
+                            display: block;
+                            margin-bottom: 5rem;
+                        }
+                        .card-about {
+                            text-align: center;
+                            h3 {
+                                font-size: 1.5rem;
+                            }
+                            span {
+                                font-size: .8rem;
+                                // margin-right: 1rem;
+                                margin-bottom: 3rem;
+                            }
+                            .content-img {
+                                position: relative;
+                                width: fit-content;
+                                margin: auto;
+                                .absolute-mat {
+                                    position: absolute;
+                                    right: -2.75rem;
+                                    top: 10%;
+                                    width: 5.5rem;
+                                }
+                                img {
+                                    width: 60vw;
+                                    margin: 1.5rem auto 2rem auto;
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    @keyframes rotating {
+        from {
+            -ms-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -webkit-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+        to {
+            -ms-transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+            -webkit-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }

@@ -1,0 +1,177 @@
+.grid_item {
+    position: relative;
+    &:hover {
+        .hover {
+            bottom: 0;
+        }
+        img {
+            object-position: bottom;
+            transform: scale(1);
+        }
+    }
+    img {
+        width: 100%;
+        height: 30vh;
+        transition: .6s ease-in-out all;
+        object-fit: cover;
+        border: none;
+        transform: scale(1.1);
+        object-position: center;
+    }
+    &.black {
+        .hover {
+            background: #000;
+            h5 {
+                color: #fff;
+            }
+            a {
+                border: 1px solid #fff;
+                i {
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .hover {
+        position: absolute;
+        bottom: -100%;
+        transition: .3s ease all;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        width: 100%;
+        z-index: 99;
+        height: fit-content;
+        border: none;
+        padding: 1rem 0;
+        h5,
+        p {
+            margin-bottom: 0;
+            // max-width: 80%;
+        }
+        h5 {
+            font-size: 1.3rem;
+            font-family: 'LEMON MILK';
+            letter-spacing: .2px;
+            text-transform: uppercase;
+            font-weight: 400;
+        }
+        p {
+            font-size: 1.4rem !important;
+            color: #a0a0a0 !important;
+            font-weight: 300;
+        }
+        a {
+            width: 3.5rem;
+            text-decoration: none;
+            font-size: 1.5rem;
+            height: 3.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            vertical-align: middle;
+            position: relative;
+            transition: .3s ease all;
+            background: transparent;
+            border-radius: 50%;
+            padding: 0;
+            border: 2px solid $secondary-color;
+            color: #fff;
+            i {
+                font-size: 1rem;
+                color: $secondary-color;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+            &:hover {
+                border: 2px solid transparent;
+                background: $tertiary-color;
+                i {
+                    color: $secondary-color !important;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:992px) {
+    .grid_item {
+        grid-column: span 2;
+        overflow: hidden !important;
+        border: none;
+        transition: .3s ease-in-out all;
+        grid-row: span 1;
+    }
+    &.alt {
+        img {
+            height: 100%;
+        }
+    }
+    &.alt-0 {
+        grid-row: span 7;
+    }
+    &.alt-1 {
+        grid-row: span 3;
+    }
+    &.alt-2 {
+        grid-row: span 4;
+    }
+    &.alt-3 {
+        grid-row: span 4;
+        grid-column: 1;
+    }
+    &.alt-4 {
+        grid-row: span 4;
+        grid-column: 2;
+    }
+    &.alt-5 {
+        grid-row: span 4;
+    }
+}
+
+@media (max-width:992px) {
+    .grid_item {
+        height: 20vh;
+        margin-bottom: 1rem;
+        .hover {
+            background-color: rgba($secondary-color, 0.5) !important;
+            bottom: 0;
+            top: 0;
+            height: 100%;
+            padding: 1rem .5rem;
+            font-size: 1rem !important;
+            h5 {
+                color: #fff !important;
+            }
+            p {
+                margin-bottom: 0 !important;
+                font-size: 1rem !important;
+                color: #fff !important;
+            }
+            a {
+                display: block;
+                width: 3.5rem;
+                height: 3.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                border-color: #fff;
+                i {
+                    position: absolute;
+                    font-size: 1rem;
+                    color: #fff;
+                }
+            }
+        }
+        img {
+            height: 100%;
+            transform: scale(1);
+        }
+        &:nth-child(1) {
+            height: unset;
+        }
+    }
+}

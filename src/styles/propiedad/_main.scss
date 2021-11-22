@@ -1,0 +1,148 @@
+.propiedad {
+    .main {
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        position: relative;
+        &::before {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            content: '';
+            // background-color: #0f0f0f;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.751278) 10%, rgba(115, 115, 115, 0) 50%, rgba(0, 0, 0, 0.351278) 100%);
+            // background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            opacity: 1;
+            z-index: 9;
+            display: block;
+        }
+        &::after {
+            content: '';
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            z-index: 2;
+            height: 1.1rem;
+            opacity: 0;
+            display: block;
+        }
+        .content-main {
+            height: 100vh;
+            color: #fff;
+            padding-bottom: 4rem;
+            z-index: 10;
+            position: relative;
+            .btn-square {
+                padding: 0;
+                width: 6.5rem;
+                color: #fff;
+                border-radius: 50%;
+                border: 1px solid #fff;
+                background: transparent;
+                height: 6.5rem;
+                font-size: 1.5rem;
+                margin-right: 5rem;
+                line-height: 1;
+                transition: .3s ease all;
+                color: transparent;
+                .count {
+                    position: absolute;
+                    left: 45%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    color: var(--secondary-color);
+                    line-height: 1;
+                    font-size: 1.2rem;
+                    z-index: 0;
+                    font-weight: 400;
+                    opacity: 0;
+                }
+                i {
+                    color: #fff;
+                    margin: 0;
+                    transition: .3s ease all;
+                }
+                &:hover {
+                    border-color: transparent;
+                    .count {
+                        opacity: 1;
+                    }
+                    i {
+                        font-size: .95rem;
+                        transform: translateX(30px);
+                        color: var(--secondary-color);
+                    }
+                }
+            }
+            h2 {
+                font-size: 3rem;
+            }
+            .btn {
+                padding: 0;
+                width: 5.5rem;
+                height: 5.5rem;
+                font-size: 1.5rem;
+                img {
+                    width: 100%;
+                    opacity: 0;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:992px) {
+    .propiedad {
+        .main {
+            height: 90vh;
+            background-attachment: unset;
+            position: relative;
+            min-height: 90vh;
+            &::before {
+                opacity: .6;
+            }
+            &::after {
+                height: 90vh;
+                background-color: #1f1f1f;
+                opacity: .2;
+                background-image: none;
+            }
+            .content-main {
+                padding-bottom: 0;
+                height: 90vh;
+                h2 {
+                    font-size: 2.5rem;
+                    font-weight: 300;
+                    display: block;
+                    margin-bottom: 0 !important;
+                    .location {
+                        font-size: 1rem;
+                    }
+                }
+                .btn-square {
+                    width: 4rem;
+                    position: absolute !important;
+                    left: 1rem;
+                    bottom: 5vh;
+                    height: 4rem;
+                    font-size: 1rem;
+                }
+            }
+            .btn {
+                width: 4rem;
+                height: 4rem;
+                position: absolute !important;
+                left: calc(0%);
+                bottom: 5vh;
+                font-size: 1rem;
+            }
+        }
+    }
+}

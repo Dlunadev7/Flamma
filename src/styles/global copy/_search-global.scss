@@ -1,0 +1,186 @@
+form {
+    .searchcontainer {
+        position: relative;
+        width: 100%;
+        ul {
+            list-style: none;
+            margin-bottom: 0;
+            position: absolute;
+            background-color: #fff;
+            border: 2px solid $secondary-color;
+            border-top: none;
+            width: 100.9%;
+            left: -2px;
+            margin-top: 2px;
+            z-index: 999;
+            padding: 0;
+            .hover-color {
+                padding: 1rem 0;
+                li {
+                    padding-left: 3rem;
+                    color: $secondary-color;
+                }
+                &:hover {
+                    background-color: $primary-color;
+                    li {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        ul li {
+            cursor: pointer;
+        }
+        hr {
+            border-top: 1px solid rgba(216, 216, 216, 0.753);
+        }
+    }
+    .content-fields {
+        background-color: transparent;
+        border: 2px solid #fff;
+        position: relative;
+        display: flex;
+        align-items: center;
+        &.second {
+            select {
+                padding-left: 1.5rem;
+            }
+        }
+        select,
+        input {
+            background-color: transparent;
+            color: #fff;
+            border: none;
+            font-weight: 100;
+            line-height: 1;
+            padding: 1.5rem 0rem;
+            font-size: 1rem;
+            padding-left: 3rem;
+            -webkit-appearance: none;
+            width: 100%;
+            &::placeholder {
+                color: #fff;
+            }
+        }
+        i {
+            color: #fff;
+            position: absolute;
+            left: 1rem;
+            font-size: 1rem;
+        }
+    }
+    button.btn-search {
+        width: 100%;
+        margin-top: 2rem;
+        display: block;
+        padding: 1.81rem;
+    }
+}
+
+.Inicio {
+    .search-results {
+        height: 20vh;
+        padding-bottom: 0;
+        margin: 0;
+        display: flex !important;
+        width: 100%;
+        align-items: center;
+        form {
+            width: 100%;
+        }
+    }
+}
+
+.search-results {
+    form {
+        // margin: 3.4rem 0%;
+        label {
+            margin-bottom: 1rem;
+            color: #464646;
+            font-weight: 200;
+        }
+        .content-fields {
+            border-color: $secondary-color;
+            &.second {
+                select {
+                    padding-left: 1.5rem;
+                }
+            }
+            select,
+            input {
+                padding: 1.5rem 1.2rem;
+                padding-left: 3rem;
+                font-weight: 300;
+                line-height: unset;
+                color: $secondary-color;
+                &::placeholder {
+                    color: $secondary-color;
+                }
+            }
+            i {
+                color: $secondary-color;
+            }
+        }
+        .btn-square {
+            margin-top: 0;
+            padding: 1.6rem;
+            width: 100%;
+            border: none;
+        }
+    }
+}
+
+@media (max-width:992px) {
+    .Inicio {
+        .search-results {
+            z-index: 999;
+            position: absolute;
+            bottom: 4vh;
+            height: unset;
+            padding: 0 1rem;
+            left: 0rem;
+            right: 0rem;
+            form {
+                label {
+                    margin-bottom: .5rem;
+                    color: #fff;
+                    display: none;
+                }
+                .content-fields {
+                    border-color: #fff;
+                    margin-top: 1rem;
+                    &.second {
+                        select {
+                            padding-left: 1.5rem;
+                        }
+                    }
+                    select,
+                    input {
+                        padding: 1.4rem 1.2rem;
+                        padding-left: 3rem;
+                        font-weight: 200;
+                        font-size: .85rem;
+                        line-height: unset;
+                        color: #fff;
+                        &::placeholder {
+                            color: #fff;
+                        }
+                        option {
+                            color: $secondary-color;
+                        }
+                    }
+                    i {
+                        color: #fff;
+                    }
+                }
+                .btn-square {
+                    margin-top: 0;
+                    padding: 1rem;
+                    font-size: .9rem;
+                    width: 100%;
+                    border: none;
+                }
+            }
+        }
+    }
+}
