@@ -13,7 +13,7 @@ export const Header = () => {
   }
 
   return (
-    <header className="container-fluid header">
+    <header className="header">
       <Navbar />
         <div className="header__menu__mobile__icon d-md-none">
         <img src={ logoFlamma } alt="logo-flamma" />
