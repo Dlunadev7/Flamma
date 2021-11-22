@@ -1,0 +1,114 @@
+.emprendimientos {
+    .investors {
+        background-color: #0F0F0F;
+        .container-fluid {
+            overflow: hidden;
+            padding-top: 15vh;
+            padding-bottom: 15vh;
+            position: relative;
+            h4 {
+                text-align: center;
+                font-size: 2.25rem;
+                text-transform: uppercase;
+                color: #fff;
+                padding-bottom: 10vh;
+            }
+            .item {
+                height: auto;
+                overflow: hidden;
+                position: relative;
+                transition: .4s ease all;
+                z-index: 3;
+                h5 {
+                    text-transform: uppercase;
+                    min-height: 8.5rem;
+                    transition: .4s ease all;
+                }
+                h5,
+                p {
+                    font-size: 1.5rem;
+                    width: 80%;
+                    margin: auto;
+                    line-height: 1.2;
+                    color: #C3C3C3;
+                    transition: .4s ease all;
+                }
+                img {
+                    transition: all .4s ease;
+                    position: relative;
+                    top: 0;
+                }
+                .btn-square {
+                    transition: .2s ease all;
+                    padding: 2rem 6rem;
+                    display: inline-block;
+                    text-decoration: none;
+                    margin-top: 2rem;
+                    transform: translateY(1000px);
+                    border: none;
+                    &:hover {
+                        background: #fff;
+                        color: var(--primary-color);
+                    }
+                }
+                &:hover {
+                    transform: translateY(-4rem);
+                    .btn-square {
+                        transform: translateY(0);
+                    }
+                    img {
+                        // position: absolute;
+                        // top: -500px;
+                        opacity: 0;
+                    }
+                    h5 {
+                        color: var(--primary-color);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:992px) {
+    .emprendimientos {
+        .investors {
+            .container-fluid {
+                padding-top: 10vh;
+                padding-bottom: 5vh;
+                .index-1 {
+                    width: 100%;
+                    .line-vertical {
+                        opacity: .0;
+                    }
+                }
+                h4 {
+                    font-size: 2rem;
+                    padding-bottom: 10vh;
+                }
+                .item {
+                    h5 {
+                        min-height: 6.5rem;
+                    }
+                    h5,
+                    p {
+                        font-size: 1.3rem;
+                        width: 85%;
+                        line-height: 1.25;
+                    }
+                    .btn-square {
+                        padding: .6rem 6rem;
+                        margin: 1.5rem 0 5rem 0;
+                        transform: translateY(0rem);
+                    }
+                    &:hover {
+                        transform: translateY(0rem);
+                        img {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

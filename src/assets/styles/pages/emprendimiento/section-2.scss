@@ -1,0 +1,24 @@
+.main__emprendimiento__about {
+  height: 100%;
+  background-color: var(--secondary-color);
+  padding: 4rem 0;
+}
+
+.main__about__container {
+  height: auto;
+}
+
+.image__about {
+  width: 471px;
+  height: 103px;
+}
+
+@media screen and (max-width: 1024px) {
+  .main__about__first__column {
+    font-size: 24px !important;
+  }  
+
+  .main__first__column__description {
+    font-size: 16px !important;
+  }
+}

@@ -1,0 +1,31 @@
+.main__first__section__emprendimiento {
+  width: 100vw;
+  height: 100vh;
+}
+
+.main__emprendimiento__container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.emprendimientoBg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.main__emprendimiento__text {
+  position: absolute;
+  width: 100%; 
+  height: 100%; 
+}
+
+.main__emprendimiento__text__container {
+  margin-top: 50vh !important;
+}
+
+.main__emprendimiento__subtitle {
+  letter-spacing: .1rem;
+}
